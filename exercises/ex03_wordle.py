@@ -40,5 +40,5 @@ def input_guess (expected_len: int) -> str:
     inputted_guess: str = str(input(f"What is your { expected_len }-letter guess? "))
     # Checks to make sure the length of both variables match
     while len(inputted_guess) != expected_len:
-        inputted_guess = str(input(f"That was not { len(secret) } letters! Try again: "))
+        inputted_guess = str(input(f"That was not {expected_len} chars! Try again: "))
     return inputted_guess
