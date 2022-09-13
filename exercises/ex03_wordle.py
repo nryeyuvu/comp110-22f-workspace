@@ -1,11 +1,11 @@
-"""Integrated wordle game allowing users six tries to guess the right secret word"""
+"""Integrated wordle game allowing users six tries to guess the right secret word."""
 
 __author__ = "730552319"
 
 # Function that will check if character is in secret word
 # Reduces work! :)
 def contains_char(searched_word: str, char_to_search: str) -> bool:
-    """Checks to see if the one character is found anywhere in the word"""
+    """Checks to see if the one character is found anywhere in the word."""
     assert len(char_to_search) == 1
     check_guess: bool = False
     func_counter: int = 0
@@ -19,7 +19,7 @@ def contains_char(searched_word: str, char_to_search: str) -> bool:
     return check_guess
 
 def emojified (guess: str, secret: str) -> str:
-    """Tests user guess with secret word and returns corresponding color emoji"""
+    """Tests user guess with secret word and returns corresponding color emoji."""
     assert len(guess) == len(secret)
     # variables to keep count of when below loop should end
     i: int = 0
@@ -38,8 +38,8 @@ def emojified (guess: str, secret: str) -> str:
     return color_code
 
 
-def input_guess (expected_len: int) -> str:
-    """Has the user pick a guess word based on a user-determined length"""
+def input_guess(expected_len: int) -> str:
+    """Has the user pick a guess word based on a user-determined length."""
     # Makes user guess word
     inputted_guess: str = str(input(f"Enter a {expected_len} character word: "))
 
@@ -68,4 +68,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
