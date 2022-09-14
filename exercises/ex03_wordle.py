@@ -2,6 +2,7 @@
 
 __author__ = "730552319"
 
+
 # Function that will check if character is in secret word
 # Reduces work! :)
 def contains_char(searched_word: str, char_to_search: str) -> bool:
@@ -18,7 +19,8 @@ def contains_char(searched_word: str, char_to_search: str) -> bool:
             func_counter += 1
     return check_guess
 
-def emojified (guess: str, secret: str) -> str:
+
+def emojified(guess: str, secret: str) -> str:
     """Tests user guess with secret word and returns corresponding color emoji."""
     assert len(guess) == len(secret)
     # variables to keep count of when below loop should end
@@ -61,10 +63,11 @@ def main() -> None:
         print(test)
         if test == five_green:
             print(f"You won in {num_of_tries}/6 turns!")
-            quit()
+            return
         else:
             num_of_tries += 1
     print("X/6 = Sorry, try again tomorrow!")
+
 
 if __name__ == "__main__":
     main()
