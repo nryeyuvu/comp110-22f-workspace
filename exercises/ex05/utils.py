@@ -2,6 +2,7 @@
 
 __author__ = "730552319"
 
+
 def only_evens(inputted_list: list[int]) -> int:
     """Returns only the even elements in a list."""
     return_list: list[int] = []
@@ -32,7 +33,7 @@ def sub(list: list[int], start_index: int, end_index: int) -> int:
     if start_index < 0:
         start_index = 0
     elif end_index > len(list):
-        end_index = len(list) - 1
+        end_index = len(list)
 
     modified_list: list[int] = []
     i: int = start_index
@@ -40,4 +41,3 @@ def sub(list: list[int], start_index: int, end_index: int) -> int:
         modified_list.append(list[i])
         i += 1
     return modified_list
-
