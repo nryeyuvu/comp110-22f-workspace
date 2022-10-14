@@ -2,7 +2,8 @@
 
 __author__ = "730552319"
 
-def invert(key: dict[str, str]) -> dict[str,str]:
+
+def invert(key: dict[str, str]) -> dict[str, str]:
     """Switches the keys and values."""
     new_dict: dict[str, str]
     new_dict = dict()
@@ -24,15 +25,15 @@ def favorite_color(colors: dict[str, str]) -> str:
     max: str = ""
     num: int = 0
     for k in freq_of_colors:
-            if freq_of_colors[k] > num:
-                num = freq_of_colors[k]
-                max = k
+        if freq_of_colors[k] > num:
+            num = freq_of_colors[k]
+            max = k
     return max
 
 
 def count(inputted_list: list[str]) -> dict[str, int]:
     """From a list of strings, determines the occurrence of each element in list."""
-    freq_dict: dict[str, int]
+    freq_dict: dict[str, int] = {}
     for i in inputted_list:
         if i in freq_dict:
             freq_dict[i] += 1

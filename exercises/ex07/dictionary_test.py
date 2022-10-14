@@ -29,19 +29,19 @@ def test_invert_multiple() -> None:
 def test_favorite_color_empty() -> None:
     """Edge case for favorite_color."""
     key: dict[str, str] = {}
-    assert invert(key) == ''
+    assert favorite_color(key) == ''
 
 
 def test_favorite_color_normal() -> None:
     """Use case for normal cases for favorite_color."""
     key: dict[str, str] = {"James": "red", "Max": "blue", "Jessi": "blue"}
-    assert invert(key) == 'blue'
+    assert favorite_color(key) == 'blue'
 
 
 def test_favorite_color_order() -> None:
     """Use case testing to give right output even when two colors have same count."""
     key: dict[str, str] = {"James": "red", "Max": "red", "Jessi": "blue", "Naga": "blue"}
-    assert invert(key) == 'red'
+    assert favorite_color(key) == 'red'
 
 
 # Unit tests for count
@@ -54,7 +54,8 @@ def test_count_empty() -> None:
 def test_count_one_element() -> None:
     """Use case for count."""
     inputted_list: list[str] = ["key"]
-    assert count(inputted_list) == {"key": 1,}
+    assert count(inputted_list) == {"key": 1}
+
 
 def test_count_two_elements() -> None:
     """Second use case for count."""
