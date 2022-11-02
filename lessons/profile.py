@@ -19,3 +19,5 @@ class Profile:
 
 my_profile: Profile = Profile("krisjordan")
 my_profile.tweet("Hello, world.")
+# another_profile: Profile = Profile("krisjordan")
+# another_profile.handle = "theverge"
