@@ -24,6 +24,11 @@ def count(node: Optional[Node], current_count: int  = 0) -> int:
         return count(node.next, current_count + 1)
 
 
+    
+
+
+
+
 
 head: Node = Node(3, None)
 head = Node(2, head)
